@@ -97,10 +97,45 @@ Certainly! Here is a simple algorithm that outlines the provided C++ code. This 
    - **Call `sum(double d, double f)`**
      - Pass `10.8` and `20.34` as arguments.
      - Print the result of their addition, which is `10.8 + 20.34 = 31.14`.
-
 4. **End**
+Certainly! Here’s a simple and easy-to-follow algorithm for the provided C++ code, which demonstrates the use of operator overloading for complex numbers.
 
+### Algorithm for `Complex` Class with Operator Overloading
+ 1. **Start**
+ 2. **Define `Complex` Class**
+   - **Private Members:**
+     - `int real`: Stores the real part of the complex number.
+     - `int imag`: Stores the imaginary part of the complex number.
+   - **Public Methods:**
+     - **Constructor `Complex(int r = 0, int i = 0)`**
+       - Initializes `real` and `imag` with default values `0` if no arguments are provided.
+     - **Overloaded `operator+`**
+       - **Parameters**: Takes a constant reference to another `Complex` object.
+       - **Operation**: Adds the real and imaginary parts of the current object and the passed object.
+       - **Returns**: A new `Complex` object with the result of the addition.
+     - **Overloaded `operator-`**
+       - **Parameters**: Takes a constant reference to another `Complex` object.
+       - **Operation**: Subtracts the real and imaginary parts of the passed object from the current object.
+       - **Returns**: A new `Complex` object with the result of the subtraction.
+     - **Method `print()`**
+       - Prints the complex number in the format: `real + i imag`.
 
+ 3. **Main Function (`main()`)**
+   - **Create `Complex` Objects:**
+     - **`c1`**: Initialize with `10` (real part) and `5` (imaginary part).
+     - **`c2`**: Initialize with `2` (real part) and `4` (imaginary part).
+     - **`c3`**: Initialize with `20` (real part) and `3` (imaginary part).
+   - **Perform Addition:**
+     - **Calculate `c4`**: Result of `c1 + c2 + c3`.
+       - **Step 1**: `c1 + c2` results in a new `Complex` object.
+       - **Step 2**: Add this result to `c3` to get `c4`.
+     - **Print `c4`**: Display the sum.
+   - **Perform Subtraction:**
+     - **Calculate `c5`**: Result of `c1 - c2 - c3`.
+       - **Step 1**: `c1 - c2` results in a new `Complex` object.
+       - **Step 2**: Subtract `c3` from this result to get `c5`.
+     - **Print `c5`**: Display the difference.
+ 4. **End**
 
 ## Conclusion
-We learnt to use the concepts of Class and Objects.
+We learnt to use the concepts of constructor overloading and operator overloading.
