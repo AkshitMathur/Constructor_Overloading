@@ -67,63 +67,40 @@ Syntax: class ClassName {
 
 ---
 
-
 ## Algorithms
-### Define method inside class
+### Constructor Overloading
+Certainly! Here is a simple algorithm that outlines the provided C++ code. This code demonstrates method overloading within a class.
 
+### Algorithm for `Cal` Class with Method Overloading
 1. **Start**
+2. **Define `Cal` Class**
+   - **Declare Public Methods:**
+     - **Method `mul(int a, int b)`**
+       - Takes two integer parameters.
+       - Returns their product as an integer.
+     - **Method `mul(int a, double b, double c)`**
+       - Takes one integer and two double parameters.
+       - Returns their product as a double.
+     - **Method `sum(double d, double f)`**
+       - Takes two double parameters.
+       - Returns their sum as a double.
 
-2. **Define the `Student` Class**
-   - **Public Section**
-     - **Define the `myMethod` Function**
-       - Print"I am studying in 2nd year"
-3. **Main Function**
-   - Create an object `s1` of type `Student`.
-   - Call the `myMethod` function on the `s1` object.
+3. **Main Function (`main()`)**
+   - **Create an Instance of `Cal`**
+     - Instantiate the `Cal` class as `c`.
+   - **Call `mul(int a, int b)`**
+     - Pass `10` and `20` as arguments.
+     - Print the result of their multiplication, which is `200`.
+   - **Call `mul(int a, double b, double c)`**
+     - Pass `10`, `34.5`, and `23.6` as arguments.
+     - Print the result of their multiplication, which is `10 * 34.5 * 23.6 = 81342.0`.
+   - **Call `sum(double d, double f)`**
+     - Pass `10.8` and `20.34` as arguments.
+     - Print the result of their addition, which is `10.8 + 20.34 = 31.14`.
 
 4. **End**
 
-### Define method outside class
-1. **Start**
 
-2. **Define the `Student` Class**
-   - **Public Section**
-     - **Declare the `myMethod` Function**
-       - The function will be defined outside the class.
-
-3. **Define the `myMethod` Function Outside the Class**
-   - **Specify that this function belongs to the `Student` class**
-   - Print the message "A Sophomore in SIT" to the console.
-
-4. **Main Function**
-   - Create an object `s1` of type `Student`.
-   - Call the `myMethod` function on the `s1` object.
-
-5. **End**
-
-### Cuboid Volume
-1. **Start**
-
-2. **Define `Cubiod` Class**
-   - **Public Section**
-     - **Data Members**
-       - `int length, breadth, height, volume;`
-     - **Member Functions**
-       - **`input()` Function**
-         - Prompt the user to enter the length, breadth, and height of the cuboid.
-         - Read the values and store them in t `length`, `breadth`, and `height` variables.
-       - **`Volume()` Function**
-         - Calculate the volume of the cuboid using the formula: `volume = length * breadth * height`.
-       - **`Output()` Function**
-         - Print : "The volume of the given Cuboid is : <volume>".
-
-3. **Main Function**
-   - Create an object `v1` of type `Cubiod`.
-   - Call the `input()` function for `v1` to get the dimensions from the user.
-   - Call the `Volume()` function for `v1` to calculate the volume.
-   - Call the `Output()` function for`v1` to display the volume.
-
-4. **End**
 
 ## Conclusion
 We learnt to use the concepts of Class and Objects.
